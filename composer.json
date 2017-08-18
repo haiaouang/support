@@ -1,0 +1,32 @@
+{
+    "name": "haiaouang/support",
+    "description": "The Hht Support package.",
+    "license": "MIT",
+    "homepage": "https://github.com/haiaouang/support",
+    "keywords": ["laravel", "support", "push", "pusher"],
+    "type": "library",
+    "support": {
+        "issues": "https://github.com/haiaouang/support",
+        "source": "https://github.com/haiaouang/support"
+    },
+    "authors": [
+        {
+            "name": "HaitaoHuang",
+            "email": "h280338871@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+	"haoaouang/pusher": "^1.0.0",
+	"haoaouang/mipush": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hht\\Support\\": ""
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
