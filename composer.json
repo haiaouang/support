@@ -17,8 +17,8 @@
     ],
     "require": {
         "php": ">=5.5.9",
-	"haoaouang/pusher": "^1.0.0",
-	"haoaouang/mipush": "^1.0.0"
+	"haiaouang/pusher": "^1.0.0",
+	"haiaouang/mipush": "^1.0.0"
     },
     "autoload": {
         "psr-4": {
