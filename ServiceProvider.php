@@ -13,6 +13,8 @@ class ServiceProvider extends ServiceProviderSupport
 	{
 		$this->publishes([
             __DIR__ . '/config/pushers.php' => config_path('pushers.php'),
+
+			__DIR__ . '/config/payers.php' => config_path('payers.php'),
         ]);
 	}
 }

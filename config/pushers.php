@@ -2,51 +2,43 @@
 
 return [
 
-    'default' => 'mipush',
-
+    'default' => 'alipay',
 
     'launchers' => [
 
-        'mipush' => [
-			'driver' => 'mipush',
-			//向某个regid或一组regid列表推送某条消息（这些regId可以属于不同的包名）  https://sandbox.xmpush.xiaomi.com/v2/message/regid
-			'reg_url' => 'https://api.xmpush.xiaomi.com/v3/message/regid',
-			//向某个alias或一组alias列表推送某条消息（这些alias可以属于不同的包名）  https://sandbox.xmpush.xiaomi.com/v2/message/alias
-			'alias_url' => 'https://api.xmpush.xiaomi.com/v3/message/alias',
-			//向某个topic推送某条消息（可以指定一个或多个包名）                      https://sandbox.xmpush.xiaomi.com/v2/message/topic
-			'topic_url' => 'https://api.xmpush.xiaomi.com/v3/message/topic',
-			//向多个topic推送单条消息（可以指定一个或多个包名）
-			'multi_topic_url' => 'https://api.xmpush.xiaomi.com/v3/message/multi_topic',
-			//向所有设备推送某条消息（可以指定一个或多个包名）                       https://sandbox.xmpush.xiaomi.com/v2/message/all
-			'all_url' => 'https://api.xmpush.xiaomi.com/v3/message/all',
-			//检查定时推送任务
-			'exist_url' => 'https://api.xmpush.xiaomi.com/v2/schedule_job/exist',
-			//删除定时任务
-			'delete_url' => 'https://api.xmpush.xiaomi.com/v2/schedule_job/delete',
+        'alipay' => [
+			'driver' => 'alipay',
+			
+			//合作身份者ID，签约账号，以2088开头由16位纯数字组成的字符串
+			'partner' => '',
 
-			'android' => [
-				//包名
-				'bundle_id' => '',
-				//app id
-				'app_id' => '',
-				//app key
-				'app_key' => '',
-				//app secret
-				'app_secret' => ''
-			],
+			//收款支付宝账号，以2088开头由16位纯数字组成的字符串，一般情况下收款账号就是签约账号
+			'seller_id' => '',
 
-			'ios' => [
-				//包名
-				'bundle_id' => '',
-				//app id
-				'app_id' => '',
-				//app key
-				'app_key' => '',
-				//app secret
-				'app_secret' => ''
-			],
-			//前缀
-			'prefix' => env( 'MIPUSH_PREFIX' , 'test_' )
+			//商户的私钥,此处填写原始私钥去头去尾
+			'private_key' => '',
+
+			//支付宝的公钥
+			'alipay_public_key' => '',
+
+			//签名方式
+			'sign_type' => 'RSA',
+
+			//字符编码格式 目前支持 gbk 或 utf-8
+			'input_charset' => 'utf-8',
+
+			// 支付类型 ，无需修改
+			'payment_type' => '1',
+
+			// 产品类型，无需修改
+			'service' => 'create_direct_pay_by_user',
+
+			// 产品类型，无需修改
+			'sdk_service' => 'mobile.securitypay.pay',
+
+			// 支付超时时间
+			'payment_time' => '30m',
+	
         ],
 
     ],
