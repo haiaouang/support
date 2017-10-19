@@ -1,6 +1,6 @@
 # support
-[![Latest Stable Version](http://www.maiguoer.com/haiaouang/payer/stable.svg)](https://packagist.org/packages/haiaouang/payer)
-[![License](http://www.maiguoer.com/haiaouang/payer/license.svg)](https://packagist.org/packages/haiaouang/payer)
+[![Latest Stable Version](http://www.maiguoer.com/haiaouang/support/stable.svg)](https://packagist.org/packages/haiaouang/support)
+[![License](http://www.maiguoer.com/haiaouang/support/license.svg)](https://packagist.org/packages/haiaouang/support)
 
 核心支持包，用于个人开发laravel包的支持包
 

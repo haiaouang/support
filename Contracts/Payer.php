@@ -1,6 +1,5 @@
 <?php namespace Hht\Support\Contracts;
 
-
 interface Payer  
 {
 
@@ -8,6 +7,6 @@ interface Payer
 
 	public function createSDKOrder(Order $order);
 
-	public function verifySign(Order $order);
+	public function verifySign($param);
 
 }
