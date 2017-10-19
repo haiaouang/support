@@ -3,7 +3,7 @@
     "description": "The Hht Support package.",
     "license": "MIT",
     "homepage": "https://github.com/haiaouang/support",
-    "keywords": ["laravel", "support", "push", "pusher"],
+    "keywords": ["laravel", "support", "push", "pay"],
     "type": "library",
     "support": {
         "issues": "https://github.com/haiaouang/support",
@@ -16,9 +16,7 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9",
-	"haiaouang/pusher": "^1.0.0",
-	"haiaouang/mipush": "^1.0.0"
+        "php": ">=5.5.9"
     },
     "autoload": {
         "psr-4": {

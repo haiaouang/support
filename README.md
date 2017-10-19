@@ -1,6 +1,6 @@
 # support
-[![Latest Stable Version](http://www.maiguoer.com/haiaouang/pusher/stable.svg)](https://packagist.org/packages/haiaouang/pusher)
-[![License](http://www.maiguoer.com/haiaouang/pusher/license.svg)](https://packagist.org/packages/haiaouang/pusher)
+[![Latest Stable Version](http://www.maiguoer.com/haiaouang/payer/stable.svg)](https://packagist.org/packages/haiaouang/payer)
+[![License](http://www.maiguoer.com/haiaouang/payer/license.svg)](https://packagist.org/packages/haiaouang/payer)
 
 核心支持包，用于个人开发laravel包的支持包
 
@@ -32,37 +32,9 @@
 
 `php artisan vendor:publish`
 
-设置推送信息的参数 config/pushers.php
-
-## 调用
-
-选取对应的推送驱动，暂时只支持[小米推送](https://github.com/haiaouang/mipush)，如需其他推送驱动可联系开发人员或自行开发
-
-```php
-    Push::launcher('mipush');
-```
-
-完整示例
-
-```php
-<?php
-
-namespace App\Http\Controllers
-
-use Hht\Support\Facades\Push;
-
-class TestController extends Controller {
-    
-    public function test()
-    {
-        $testPusher = Push::launcher('mipush');
-    }
-   
-}
-
-```
-
-## 依赖包
+## 其他
 
 * haiaouang/pusher : https://github.com/haiaouang/pusher
 * haiaouang/mipush : https://github.com/haiaouang/mipush
+* haiaouang/payer : https://github.com/haiaouang/payer
+* haiaouang/alipay : https://github.com/haiaouang/alipay
